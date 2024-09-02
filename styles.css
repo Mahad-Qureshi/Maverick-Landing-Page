@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffbea8;
+}
+
+h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    color: #adadad;
+    font-size: 20px;
+}
+
+.pageWidth {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.secondaryColor {
+    color: #f6602e;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flexContainer3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.align {
+    align-content: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flexContainer2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagePadding {
+    padding: 75px 15px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bgImageSize {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Mobile Screen Start */
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .heroCol,
+    .planCol1,
+    .planCol2,
+    .imgBox {
+        width: 100% !important;
+    }
+
+    .calendly-inline-widget {
+        max-width: 100%;
+    }
+
+    .flexColumn .planContent {
+        flex-direction: row;
+    }
+
+    .planCol2 .flexContainer {
+        padding-left: 0 !important;
+    }
+
+    .planCol2 {
+        padding-left: 0 !important;
+    }
+
+    .mySlides {
+        width: 100% !important;
+    }
+}
+
+/* Mobile Screen End */
+
+/* Medium Screen Start */
+@media screen and (max-width: 1100px) {
+    .hidemediumlarge {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .hideMedium {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .pageWidth {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+
+    .heroCol {
+        width: 100% !important;
+    }
+
+    .planContent {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tabHide {
+        display: none;
+    }
+
+    .MakeaPlan {
+        flex-wrap: nowrap !important;
+    }
+
+    .planCol2 .flexContainer {
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+        padding-left: 2%;
+    }
+
+    .mySlides {
+        width: 70%;
+    }
+
+    .ctaContent,
+    .ctaMain {
+        max-width: 100% !important;
+    }
+
+    .ctaIconContainer {
+        width: 40% !important;
+    }
+
+    .ctaIconContainer {
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+        flex-direction: row !important;
+    }
+
+}
+
+/* Medium Screen End */
+
+/* Header Start */
+header {
+    padding: 0px 15px;
+}
+
+.topbar {
+    padding: 15px 0px;
+}
+
+.info-icon,
+.star {
+    width: 20px;
+}
+
+.info-icon {
+    padding-left: 5px;
+}
+
+.logo {
+    width: 40%;
+}
+
+.liveChat {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #FFBEA8;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+}
+
+.topBarLinks {
+    font-size: 13px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #f6602e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #f6602e;
+}
+
+/* .menu {
+    height: 33px;
+} */
+
+nav {
+    border-top: 1px solid #4A4A4A;
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.rightBorder {
+    padding: 15px 0px;
+    padding-right: 20px;
+    border-right: 1px solid #4A4A4A;
+}
+
+.price {
+    text-align: center;
+    line-height: 15px;
+}
+
+.revenue {
+    color: #adadad;
+    font-size: 9px;
+}
+
+.bookAMeetingDiv {
+    padding: 25px;
+    background: linear-gradient(90deg, #A5885C 0%, #DCC68E 100%) 0% 0% no-repeat;
+    text-align: center;
+}
+
+.bookAMeeting {
+    color: #000;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.call-btn {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.bookAMeeting i {
+    margin-right: 5px;
+}
+
+.menuItems,
+.dropdownLinks {
+    font-size: 13px;
+}
+
+/* Header End */
+
+/* Hero Start */
+.heroSection {
+    background-image: url('./images/banner.png');
+}
+
+.heroCol {
+    width: 50%;
+}
+
+.calendly-inline-widget {
+    height: 620px !important;
+    max-width: 68%;
+    margin: 0 auto;
+}
+
+/* Hero End */
+
+/* Make A Plan Start */
+.planCol1 {
+    width: 40%;
+    text-align: center;
+}
+
+.planCol2 {
+    width: 60%;
+    padding-left: 5%;
+}
+
+.planCol1 img {
+    width: 50%;
+}
+
+.planContent {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imgBox {
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: solid 1px #ffffff17;
+    width: 50%;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.imgBox:hover {
+    background-color: #ffffff17;
+}
+
+.fa-check {
+    background-color: #f6602e;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Make A Plan */
+
+/* Client Logo Start */
+.clientContent {
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.slider {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    will-change: transform;
+    gap: 50px;
+}
+
+.slider img {
+    display: block;
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    transform: translateY(-50%);
+    right: 10px;
+    border-radius: 50%;
+}
+
+.clientLogo {
+    width: 200px;
+}
+
+.twitter,
+.snapchat {
+    width: 5%;
+}
+
+/* Client Logo End */
+
+/* Testimonial Start  */
+
+.prevTestimonial,
+.nextTestimonial {
+    cursor: pointer;
+    width: auto;
+    padding: 12px 18px;
+    margin: 0px 0px;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 25px;
+    user-select: none;
+    background-color: #DBF4FF;
+    color: #000;
+}
+
+.prevTestimonial:hover,
+.nextTestimonial:hover {
+    background-color: #cdebf8;
+}
+
+.prevnextbtn {
+    margin-bottom: 25px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.mySlides {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.name {
+    margin-top: 25px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Testimonial End  */
+
+/* CTA Start  */
+.CTA {
+    background-color: #fff;
+}
+
+.ctaContent {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.ctaContent h1 {
+    font-size: 30px;
+}
+
+.ctaContent p {
+    color: #5e5e5e;
+}
+
+.ctaIconContainer {
+    justify-content: center;
+    width: 30%;
+    gap: 20;
+    background-color: #ffffff17;
+    border: 1px solid #ffffff17;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.ctaIconContainer:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.ctaMain {
+    background-color: #000;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+/* CTA End  */
